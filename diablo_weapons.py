@@ -84,7 +84,11 @@ def generate_weapon(level = None):
     weapon = Weapon(level, weapon_type[0], weapon_rarity, weapon_quality)
     return weapon
 
+print(str(generate_weapon(randint(1,100))))
+# File generation code
+"""
 with open("weapons.txt", "w") as f:
     for i in range(1, 101):
         for j in range(10):
             f.write(str(generate_weapon(i)) + "\n")
+"""
